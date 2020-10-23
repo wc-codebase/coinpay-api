@@ -32,10 +32,20 @@ This project for multi-cryptocurrency integration api.
     
     ** Add config to bitcoin.conf file ** 
 
-    rpcuser=username
-    rpcpassword=password
-    testnet=1
-    rpcport=8332
-    rpcallowip=127.0.0.1
-    rpcallowip=195.154.11.93
-    server=1
+    - rpcuser=username
+    - rpcpassword=password
+    - testnet=1
+    - rpcport=8332
+    - rpcallowip=127.0.0.1
+    - rpcallowip=195.154.11.93
+    - server=1
+   
+    ** Start bitcoind ** 
+
+    bitcoind --daemon
+
+    ** Test bitcoind is running and working **
+
+    bitcoin-cli getinfo
+    
+    & needed at least 320GB for download all blocks and sync ledger
